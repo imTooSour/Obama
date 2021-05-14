@@ -1,0 +1,77 @@
+.rainbow-text { 
+    background-image: linear-gradient(to left, violet, green, red);
+    -webkit-background-clip: text; 
+    color: transparent;
+}
+img {
+    border: 30px solid rgb(245, 0, 0);
+}
+
+/* html{
+    border: 100px solid transparent;
+    padding: 15px;
+    border-image: url("https://ca-times.brightspotcdn.com/dims4/default/bec99d7/2147483647/strip/true/crop/2000x2706+0+0/resize/840x1137!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fff%2F2c%2Fdedf568e4af087cab5f0a5c76f32%2Fla-ca-bk-a-promised-land-barack-obama-183.JPG") 50 round;
+  } */
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    }
+
+.flex-item:nth-child(1) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    background-color: white;
+    }
+  
+    body {
+        background-image: url("https://ca-times.brightspotcdn.com/dims4/default/bec99d7/2147483647/strip/true/crop/2000x2706+0+0/resize/840x1137!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fff%2F2c%2Fdedf568e4af087cab5f0a5c76f32%2Fla-ca-bk-a-promised-land-barack-obama-183.JPG");
+        background-repeat: round;
+        background-size: cover;
+    }
+
+       :root {
+        --width: 300px;
+        --x-speed: 13s;
+        --y-speed: 7s;
+        --transition-speed: 2.2s;
+      }
+      
+      .el { 
+        width: var(--width);
+        height: var(--width);
+      }
+      
+      .x {
+        animation: x var(--x-speed) linear infinite alternate;
+      }
+      .y {
+        animation: y var(--y-speed) linear infinite alternate;
+      }
+      
+      @keyframes x {
+        100% {
+          transform: translateX(calc(100vw - var(--width)));
+        }
+      }
+      @keyframes y {
+        100% {
+          transform: translateY(calc(100vh - var(--width)));
+        }
+      }
+
+      .el {
+          width: 750px;
+          height: 400px;
+          z-index: 10;
+          position: absolute;
+          background-image:url("https://i.kym-cdn.com/entries/icons/original/000/026/438/obamammaa.jpg")
+      }
